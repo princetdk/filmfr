@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CinemaStar - Votre Plateforme de Streaming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <span class="logo-icon">⭐</span>
+                <span class="logo-text">CinemaStar</span>
+            </div>
+
+            <!-- Barre de recherche -->
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Rechercher un film..."
+                >
+                <button class="search-btn">🔍</button>
+            </div>
+
+            <!-- Menu de navigation -->
+            <div class="nav-links">
+                <a href="#" class="nav-link active">Accueil</a>
+                <a href="#films" class="nav-link">Films</a>
+                <a href="#series" class="nav-link">Séries</a>
+                <a href="#nouveautes" class="nav-link">Nouveautés</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Héro -->
+    <section class="hero" id="heroSection">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 id="heroTitle" class="hero-title">Film du Moment</h1>
+                <p id="heroDescription" class="hero-description">
+                    Découvrez cette masterpiece du cinéma
+                </p>
+                <div class="hero-buttons">
+                    <button id="playBtn" class="btn btn-primary">▶ Regarder</button>
+                    <button class="btn btn-secondary">ℹ Plus d'infos</button>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Section Populaires -->
+    <section class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">🔥 Populaires</h2>
+        </div>
+        <div class="carousel" id="populairesCarousel"></div>
+    </section>
+
+    <!-- Section Action -->
+    <section class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">💥 Action</h2>
+        </div>
+        <div class="carousel" id="actionCarousel"></div>
+    </section>
+
+    <!-- Section Comédie -->
+    <section class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">😂 Comédie</h2>
+        </div>
+        <div class="carousel" id="comedieCarousel"></div>
+    </section>
+
+    <!-- Section Drame -->
+    <section class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">💔 Drame</h2>
+        </div>
+        <div class="carousel" id="drameCarousel"></div>
+    </section>
+
+    <!-- Section Science-Fiction -->
+    <section class="content-section">
+        <div class="section-header">
+            <h2 class="section-title">🚀 Science-Fiction</h2>
+        </div>
+        <div class="carousel" id="scifiCarousel"></div>
+    </section>
+
+    <!-- Modal Vidéo -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-body">
+                <video id="videoPlayer" class="video-player" controls>
+                    <source src="" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture vidéo HTML5.
+                </video>
+                <div class="modal-info">
+                    <h2 id="modalTitle" class="modal-title">Titre du Film</h2>
+                    <p id="modalGenre" class="modal-genre">Genre</p>
+                    <p id="modalDescription" class="modal-description">Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de film (affichage détaillé) -->
+    <div id="filmModal" class="modal">
+        <div class="modal-content modal-film-content">
+            <button class="modal-close" id="closeFilmModal">&times;</button>
+            <div class="film-modal-body">
+                <div class="film-poster">
+                    <img id="filmPosterImg" src="" alt="Affiche du film">
+                </div>
+                <div class="film-details">
+                    <h2 id="filmTitle" class="film-title">Titre du Film</h2>
+                    <div class="film-meta">
+                        <span id="filmGenre" class="badge">Genre</span>
+                        <span class="rating">⭐ 8.5/10</span>
+                    </div>
+                    <p id="filmFullDescription" class="film-description">Description détaillée du film</p>
+                    <button id="playFilmBtn" class="btn btn-primary mt-4">▶ Regarder maintenant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 CinemaStar. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Confidentialité</a>
+                <a href="#">Conditions d'utilisation</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
