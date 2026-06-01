@@ -2,7 +2,7 @@
 // CONFIGURATION DE L'API TMDB
 // ========================================
 
-const TMDB_API_KEY = 'YOUR_TMDB_API_KEY_HERE';
+const TMDB_API_KEY = '220520758ce13f812c262a20223feee9';
 const TMDB_BASE_URL = 'https://api.themoviedb.org/3';
 const TMDB_IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 
